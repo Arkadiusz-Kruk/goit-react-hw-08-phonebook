@@ -1,5 +1,4 @@
 import styles from './PublicLayout.module.css';
-import myPhoto from './anna_ojdana_profile.jpg';
 import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io';
 
 const PublicLayout = () => {
