@@ -1,0 +1,27 @@
+.form {
+  margin: 20px 0;
+  padding: 25px;
+  border: 1px solid #71278f;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.form__field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
+}
+.label {
+  font-size: 20px;
+  color: #132237;
+  margin-bottom: 18px;
+}
+
+.input {
+  padding: 5px 15px;
+  max-width: 400px;
+  height: 45px;
+  border-radius: 18px;
+  border: 1px solid #71278f;
+  outline: none;
+}
