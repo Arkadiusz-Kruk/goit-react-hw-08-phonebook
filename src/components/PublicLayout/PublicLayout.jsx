@@ -31,11 +31,7 @@ const PublicLayout = () => {
             rel="noreferrer"
           >
             <IoLogoLinkedin />
-            <img
-              className={photo}
-              src={myPhoto}
-              alt="The creator of the application"
-            />
+            
           </a>
         </div>
         <div className={info}>
