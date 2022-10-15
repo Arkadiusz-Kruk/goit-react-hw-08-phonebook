@@ -8,7 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #0b73db;
+  background-color: #e7edf3;
 }
 
 code {
@@ -30,4 +30,11 @@ h4,
 h5,
 h6 {
   margin: 0;
+}
+
+h1 {
+  font-size: 25px;
+  color: #373537;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
