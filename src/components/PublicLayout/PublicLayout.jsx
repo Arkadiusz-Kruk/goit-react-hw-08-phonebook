@@ -7,36 +7,19 @@ const PublicLayout = () => {
 
   const content = (
     <section className="public">
-      <h1 className={heading}>Welcome to my Phonebook App</h1>
+      <h1 className={heading}>Welcome Phonebook App</h1>
       <p className={description}>
-        This app was made during my learning react and redux. It allows you to
-        register and keep your contacts.
-        <a
-          className={github}
-          href="https://github.com/annaojdana/goit-react-hw-08-phonebook"
-          target="_blank"
-          rel="noreferrer"
-        >
+        Phonebook allows you to save, delete and view your phone contacts at any time. Please Sign up or Log in to get started.
+        
           <IoLogoGithub />
           Application code
         </a>
       </p>
 
-      <div className={presentation}>
-        <div>
-          <a
-            className={linkedin}
-            href="https://www.linkedin.com/in/anna-ojdana/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <IoLogoLinkedin />
-            
-          </a>
-        </div>
+      
         <div className={info}>
           <p className={description}>
-            Hi, my name is Ania and I'm a Junior React Developer
+            Hi, my name is Arkadiusz
           </p>
         </div>
       </div>
