@@ -48,14 +48,17 @@ const Input = styled.input`
   font-size: 1.2em;
   box-sizing: border-box;
   &:focus ~ span {
+    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
   &:not(:placeholder-shown) ~ span {
     color: red;
+    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
   &:valid ~ span {
     color: #86af49;
+    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
 `;
