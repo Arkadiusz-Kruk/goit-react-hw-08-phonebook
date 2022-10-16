@@ -24,7 +24,7 @@ const Nav = styled.div`
   box-shadow: 0 2px 2px 1px green;
   padding: 15px 0;
   margin: 25px auto;
-  background: green;
+  background: white;
   max-width: 480px;
   border-radius: 10px;
 `;
