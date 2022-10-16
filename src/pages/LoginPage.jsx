@@ -12,7 +12,7 @@ const Center = styled.div`
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 2px 1px black;
-  max-width: 550px;
+  max-width: 400px;
   margin: 0 auto;
 `;
 
