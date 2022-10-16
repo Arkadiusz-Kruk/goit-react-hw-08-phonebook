@@ -126,7 +126,7 @@ const LoginPage = () => {
             <label>
               <Input
                 type=""
-                name="email"
+                name=""
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 title="Please enter your e-mail address (example: characters@characters.domain)"
                 required
@@ -139,8 +139,8 @@ const LoginPage = () => {
           <Inputbox>
             <label>
               <Input
-                type="password"
-                name="password"
+                type=""
+                name=""
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"
                 required
