@@ -8,19 +8,19 @@ const Cookie = () => {
         style={{ background: '#000', textAlign: 'left' }}
         buttonStyle={{
           border: '2px solid #000',
-          borderRadius: '10px',
+          borderRadius: '5px',
           outline: 'none',
-          background: 'dodgerblue',
+          background: 'blue',
           padding: '6px',
-          color: '#fff',
+          color: 'yellow',
           fontSize: '1em',
           '&:hover': {
-            background: 'red',
+            background: 'blue',
           },
         }}
         expires={365}
       >
-        This website uses cookies to enhance the user experience.{' '}
+        This website uses cookies.{' '}
       </CookieConsent>
     </>
   );
