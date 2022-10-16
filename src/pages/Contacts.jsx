@@ -8,7 +8,7 @@ import isEmpty from 'utilities/isEmpty';
 import Loader from '../components/Loader';
 
 const Center = styled.div`
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto 25px auto;
   position: relative;
   padding: 50px 25px;
