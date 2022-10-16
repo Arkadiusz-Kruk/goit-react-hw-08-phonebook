@@ -7,7 +7,7 @@ const List = styled.li`
   display: flex;
   &::before {
     content: '•';
-    color: dodgerblue;
+    color: red;
     font-weight: bold;
     display: inline-block;
     width: 1em;
