@@ -29,7 +29,7 @@ const Paragraph = styled.p`
 `;
 
 const StyledLink = styled(Link)`
-  color: none;
+  color: orange;
 `;
 
 const HomePage = () => {
