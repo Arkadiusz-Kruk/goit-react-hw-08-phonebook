@@ -9,13 +9,13 @@ const Center = styled.div`
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 2px 1px black;
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto;
 `;
 
 const MainHeader = styled.h1`
   font-size: 2em;
-  border-left: 5px solid dodgerblue;
+  border-left: 5px solid orange;
   padding: 10px;
   color: #000;
   letter-spacing: 5px;
