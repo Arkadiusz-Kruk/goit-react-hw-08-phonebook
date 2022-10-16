@@ -22,9 +22,11 @@ const Input = styled.input`
   font-size: 1.2em;
   box-sizing: border-box;
   &:focus ~ span {
+    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
   &:not(:placeholder-shown) ~ span {
+    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
 `;
