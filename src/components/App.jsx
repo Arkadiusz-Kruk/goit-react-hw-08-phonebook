@@ -10,10 +10,10 @@ import Cookie from './Cookie';
 
 const StyledLink = styled(NavLink)`
   font-weight: bold;
-  font-size: 20px;
-  color: black;
+  font-size: 30px;
+  color: blue;
   &.active {
-    color: yellow;
+    color: orange;
   }
 `;
 
@@ -21,10 +21,10 @@ const Nav = styled.div`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0 4px 2px 1px black;
+  box-shadow: 0 2px 2px 1px black;
   padding: 15px 0;
   margin: 25px auto;
-  background: white;
+  background: green;
   max-width: 400px;
   border-radius: 10px;
 `;
