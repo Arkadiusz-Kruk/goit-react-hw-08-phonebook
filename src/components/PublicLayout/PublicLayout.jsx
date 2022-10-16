@@ -1,8 +1,7 @@
 import styles from './PublicLayout.module.css';
-import { IoLogoLinkedin, IoLogoGithub } from 'react-icons/io';
 
 const PublicLayout = () => {
-  const { heading, description, presentation, github, info } =
+  const { heading, description} =
     styles;
 
   const content = (
