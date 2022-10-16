@@ -22,10 +22,10 @@ const Btn = styled.button`
   border-radius: 10px;
   font-size: 1em;
   width: 30%;
-  background: dodgerblue;
+  background: blue;
   color: #fff;
   &:hover {
-    background: linear-gradient(45deg, greenyellow, dodgerblue);
+    background: dodgerblue);
   }
 `;
 
