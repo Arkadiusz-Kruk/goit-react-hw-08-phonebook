@@ -18,7 +18,7 @@ const PublicLayout = () => {
             Hi, my name is Arkadiusz
           </p>
         </div>
-      </div>
+    
     </section>
   );
   return content;
