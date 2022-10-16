@@ -10,10 +10,6 @@ const PublicLayout = () => {
       <h1 className={heading}>Welcome Phonebook App</h1>
       <p className={description}>
         Phonebook allows you to save, delete and view your phone contacts at any time. Please Sign up or Log in to get started.
-        
-          <IoLogoGithub />
-          Application code
-        </a>
       </p>
 
       
