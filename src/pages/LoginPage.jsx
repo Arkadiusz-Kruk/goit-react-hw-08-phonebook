@@ -12,13 +12,12 @@ const Center = styled.div`
   background: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 2px 1px black;
-  max-width: 350px;
+  max-width: 550px;
   margin: 0 auto;
 `;
 
 const MainHeader = styled.h1`
   font-size: 2em;
-  border-left: 5px solid dodgerblue;
   padding: 10px;
   color: #000;
   letter-spacing: 5px;
@@ -49,17 +48,14 @@ const Input = styled.input`
   font-size: 1.2em;
   box-sizing: border-box;
   &:focus ~ span {
-    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
   &:not(:placeholder-shown) ~ span {
     color: red;
-    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
   &:valid ~ span {
     color: #86af49;
-    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
 `;
