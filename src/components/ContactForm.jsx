@@ -63,7 +63,7 @@ const Btn = styled.button`
   color: #fff;
   border: #fff;
   &:hover {
-    background: linear-gradient(45deg, greenyellow, dodgerblue);
+    background: linear-gradient(85deg, blue);
   }
 `;
 
