@@ -134,7 +134,7 @@ const LoginPage = () => {
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 title="Please enter your e-mail address (example: characters@characters.domain)"
                 required
-                placeholder="email"
+               
                 
               />
               <Span>Email</Span>
@@ -148,7 +148,7 @@ const LoginPage = () => {
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"
                 required
-                placeholder="password "
+                
                 
               />
               <Span>Password</Span>
