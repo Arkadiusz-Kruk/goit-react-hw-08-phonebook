@@ -8,7 +8,7 @@ import isEmpty from 'utilities/isEmpty';
 import Loader from '../components/Loader';
 
 const Center = styled.div`
-  max-width: 550px;
+  max-width: 500px;
   margin: 0 auto 25px auto;
   position: relative;
   padding: 50px 25px;
@@ -19,7 +19,7 @@ const Center = styled.div`
 
 const MainHeader = styled.h1`
   font-size: 2em;
-  border-left: 5px solid dodgerblue;
+  
   padding: 10px;
   color: #000;
   letter-spacing: 5px;
@@ -30,7 +30,7 @@ const MainHeader = styled.h1`
 
 const SecondHeader = styled.h2`
   font-size: 1.5em;
-  border-left: 5px solid dodgerblue;
+ 
   padding: 10px;
   color: #000;
   letter-spacing: 5px;
