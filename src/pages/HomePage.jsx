@@ -29,7 +29,7 @@ const Paragraph = styled.p`
 `;
 
 const StyledLink = styled(Link)`
-  color: dodgerblue;
+  color: none;
 `;
 
 const HomePage = () => {
@@ -40,8 +40,7 @@ const HomePage = () => {
       <MainHeader>Phonebook</MainHeader>
       {!token && (
         <Paragraph>
-          Phonebook allows you to save, delete and view your phone contacts at
-          any time. Please <StyledLink to="/register">Sign up </StyledLink>or{' '}
+          Welcome to my Phonebook App. Please <StyledLink to="/register">Sign up </StyledLink>or{' '}
           <StyledLink to="/login">Log in</StyledLink> to get started.
         </Paragraph>
       )}
