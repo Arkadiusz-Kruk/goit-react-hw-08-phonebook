@@ -48,14 +48,17 @@ const Input = styled.input`
   font-size: 1.2em;
   box-sizing: border-box;
   &:focus ~ span {
+    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
   &:not(:placeholder-shown) ~ span {
     color: red;
+    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
   &:valid ~ span {
     color: #86af49;
+    transform: translateX(-13px) translateY(-35px);
     font-size: 1em;
   }
 `;
@@ -125,13 +128,13 @@ const LoginPage = () => {
           <Inputbox>
             <label>
               <Input
-                type=""
-                name=""
+                type="email"
+                name="email"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
                 title="Please enter your e-mail address (example: characters@characters.domain)"
                 required
-               
-                
+                placeholder=" "
+                defaultValue="tester123@gmail.com"
               />
               <Span>Email</Span>
             </label>
@@ -139,13 +142,13 @@ const LoginPage = () => {
           <Inputbox>
             <label>
               <Input
-                type=""
-                name=""
+                type="password"
+                name="password"
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"
                 title="Must contain at least one number and one uppercase and lowercase letter, and at least 6 or more characters"
                 required
-                
-                
+                placeholder=" "
+                defaultValue="Tester123!GoIT"
               />
               <Span>Password</Span>
             </label>
