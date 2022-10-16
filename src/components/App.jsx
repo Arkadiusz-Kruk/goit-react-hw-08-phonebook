@@ -1,54 +1,68 @@
-import { useEffect, lazy } from 'react';
-import { useDispatch } from 'react-redux';
-import { Route, Routes } from 'react-router-dom';
-import Layout from './Layout/Layout';
-import { PrivateRoute } from './PrivateRoute';
-import { RestrictedRoute } from './RestrictedRoute';
-import { refreshUser } from 'redux/auth/authOperations';
-import { useAuth } from 'hooks/useAuth';
+import { NavLink, Outlet } from 'react-router-dom';
+import styled from 'styled-components';
+import { Suspense } from 'react';
+import Loader from 'components/Loader';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+import Logout from './Logout';
+import { useSelector } from 'react-redux';
+import Cookie from './Cookie';
 
-const PublicLayout = lazy(() =>
-  import('../components/PublicLayout/PublicLayout')
-);
-const Register = lazy(() => import('../components/Register/Register'));
-const Login = lazy(() => import('../components/Login/Login'));
-const ContactsPage = lazy(() => import('pages/ContactsPage/ContactsPage'));
+const StyledLink = styled(NavLink)`
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+  &.active {
+    color: dodgerblue;
+  }
+`;
 
-function App() {
-  const dispatch = useDispatch();
-  const { isRefreshing } = useAuth();
+const Nav = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  box-shadow: 0 4px 2px 1px black;
+  padding: 15px 0;
+  margin: 25px auto;
+  background: white;
+  max-width: 400px;
+  border-radius: 10px;
+`;
 
-  useEffect(() => {
-    dispatch(refreshUser());
-  }, [dispatch]);
+const SpinnerWrapper = styled.div`
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-40%, -50%);
+`;
 
-  return isRefreshing ? (
-    <b>Refreshing user...</b>
-  ) : (
-    <Routes>
-      <Route path="/" element={<Layout />}>
-        <Route index element={<PublicLayout />} />
-        <Route
-          path="/register"
-          element={
-            <RestrictedRoute redirectTo="/contacts" component={<Register />} />
-          }
-        />
-        <Route
-          path="/login"
-          element={
-            <RestrictedRoute redirectTo="/contacts" component={<Login />} />
-          }
-        />
-        <Route
-          path="/contacts"
-          element={
-            <PrivateRoute redirectTo="/login" component={<ContactsPage />} />
-          }
-        />
-      </Route>
-    </Routes>
+const App = () => {
+  const token = useSelector(state => state.token);
+
+  return (
+    <>
+      <Nav>
+        <StyledLink to="/" end>
+          Home
+        </StyledLink>
+        {!token && <StyledLink to="/register">Sign up </StyledLink>}
+        {!token && <StyledLink to="/login">Log in</StyledLink>}
+        {token && <StyledLink to="/contacts">Contacts</StyledLink>}
+        {token && <Logout />}
+      </Nav>
+      <Suspense
+        fallback={
+          <SpinnerWrapper>
+            <Loader />
+          </SpinnerWrapper>
+        }
+      >
+        <Outlet />
+      </Suspense>
+      <Cookie />
+      <ToastContainer autoClose={3000} />
+    </>
   );
-}
+};
 
 export default App;
