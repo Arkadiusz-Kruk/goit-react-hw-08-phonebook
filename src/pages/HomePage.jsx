@@ -15,7 +15,6 @@ const Center = styled.div`
 
 const MainHeader = styled.h1`
   font-size: 2em;
-  border-left: 5px solid orange;
   padding: 10px;
   color: #000;
   letter-spacing: 5px;
