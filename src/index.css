@@ -14,7 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  background: linear-gradient(45deg, greenyellow, dodgerblue);
+  background: linear-gradient(45deg, orange);
   background-attachment: fixed;
 }
 
