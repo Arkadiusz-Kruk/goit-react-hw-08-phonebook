@@ -13,7 +13,7 @@ const StyledLink = styled(NavLink)`
   font-size: 20px;
   color: black;
   &.active {
-    color: dodgerblue;
+    color: yellow;
   }
 `;
 
