@@ -8,13 +8,13 @@ import isEmpty from 'utilities/isEmpty';
 import Loader from '../components/Loader';
 
 const Center = styled.div`
-  max-width: 350px;
+  max-width: 550px;
   margin: 0 auto 25px auto;
   position: relative;
   padding: 50px 25px;
   background: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 2px 1px black;
+  box-shadow: 0 2px 2px 1px orange;
 `;
 
 const MainHeader = styled.h1`
